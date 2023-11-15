@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         categories.add(new Category("Outdore","","#0000ff","some brief",4));
         categories.add(new Category("babies","","#0000ff","some brief",5));
         categories.add(new Category("local mall","","#0000ff","some brief",6));
-        categories.add(new Category("Electronics","","#00ffff","It is electronics",7));
+        categories.add(new Category("Electronics","","#0000ff","It is electronics",7));
 
         categoryAdapter = new CategoryAdapter(this,categories);
 
