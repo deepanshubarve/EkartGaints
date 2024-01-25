@@ -7,8 +7,8 @@
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageView"
-        android:layout_width="86dp"
-        android:layout_height="75dp"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
         android:layout_marginStart="151dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="152dp"
@@ -27,7 +27,7 @@
         tools:ignore="ImageContrastCheck" />
 
     <TextView
-        android:id="@+id/lable"
+        android:id="@+id/productBrief"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"

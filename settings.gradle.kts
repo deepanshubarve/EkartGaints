@@ -14,6 +14,8 @@ dependencyResolutionManagement {
     }
 }
 
+
+
 rootProject.name = "EkartGaints"
 include(":app")
  

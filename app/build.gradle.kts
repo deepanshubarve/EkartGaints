@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.ekartgaints"
-        minSdk = 30
+        minSdk = 29
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -55,4 +55,5 @@ dependencies {
     implementation ("org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0")
 
     implementation ("com.android.volley:volley:1.2.1")
+    implementation ("com.github.hishd:TinyCart:1.0.1")
 }

@@ -2,4 +2,6 @@
     <string name="app_name">EkartGaints</string>
     <string name="textview">TextView</string>
     <string name="ind_500">IND 500</string>
+    <string name="ProductBrief">TextView</string>
+    <string name="cart">cart</string>
 </resources>

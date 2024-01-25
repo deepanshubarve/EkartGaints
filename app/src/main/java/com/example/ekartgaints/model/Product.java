@@ -1,9 +1,23 @@
 package com.example.ekartgaints.model;
 
-public class Product {
+import com.hishd.tinycart.model.Item;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+
+public class Product implements Item, Serializable {
     private String name,image,status;
     private double price , discount;
     private int stock ,id;
+    private int quantity;
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
     public Product(String name, String image, String status, double price, double discount, int stock, int id) {
         this.name = name;
@@ -69,5 +83,15 @@ public class Product {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public BigDecimal getItemPrice() {
+        return new BigDecimal(price);
+    }
+
+    @Override
+    public String getItemName() {
+        return name;
     }
 }
