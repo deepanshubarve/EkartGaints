@@ -11,7 +11,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.ekartgaints.R;
 import com.example.ekartgaints.adapter.ProductAdapter;
-import com.example.ekartgaints.databinding.ActivityCategoryBinding;
+import com.example.ekartgaints.databinding.ActivitySearchBinding;
 import com.example.ekartgaints.model.Product;
 import com.example.ekartgaints.utils.Constants;
 
@@ -21,42 +21,44 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class CategoryActivity extends AppCompatActivity {
+public class SearchActivity extends AppCompatActivity {
 
-    ActivityCategoryBinding binding;
+    ActivitySearchBinding binding;
     ProductAdapter productAdapter;
     ArrayList<Product> products;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityCategoryBinding.inflate(getLayoutInflater());
+        binding = ActivitySearchBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         products = new ArrayList<>();
         productAdapter = new ProductAdapter(this,products);
 
-        int catId = getIntent().getIntExtra("catId",0);
-        String categoryName = getIntent().getStringExtra("categoryName");
+        String query = getIntent().getStringExtra("query");
 
-        getSupportActionBar().setTitle(categoryName);
+        getSupportActionBar().setTitle(query);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getProduct(catId);
+        getProduct(query);
+
         GridLayoutManager layoutManager = new GridLayoutManager(this,2);
         binding.productlist.setLayoutManager(layoutManager);
         binding.productlist.setAdapter(productAdapter);
-    }
 
+
+
+    }
     @Override
     public boolean onSupportNavigateUp() {
         finish();
         return super.onSupportNavigateUp();
     }
 
-    void getProduct(int catId){
+    void getProduct(String query){
         RequestQueue queue = Volley.newRequestQueue(this);
 
-        String url = Constants.GET_PRODUCTS_URL + "?category_id="+catId;
+        String url = Constants.GET_PRODUCTS_URL + "?q="+query;
         StringRequest request = new StringRequest(Request.Method.GET, url, response -> {
             try {
                 JSONObject object = new JSONObject(response);
