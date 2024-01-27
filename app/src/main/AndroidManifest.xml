@@ -24,7 +24,7 @@
             android:exported="false"
             android:theme="@style/Base.Theme.EkartGaints.ActionBar" />
         <activity
-            android:name=".PaymentActivity"
+            android:name=".activities.PaymentActivity"
             android:exported="false"
             android:label="Payment"
             android:theme="@style/Base.Theme.EkartGaints.ActionBar" />

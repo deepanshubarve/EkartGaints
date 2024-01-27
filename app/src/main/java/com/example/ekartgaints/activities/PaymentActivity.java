@@ -1,4 +1,4 @@
-package com.example.ekartgaints;
+package com.example.ekartgaints.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
