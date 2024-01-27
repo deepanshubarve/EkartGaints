@@ -48,7 +48,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/Taxes"
+            android:id="@+id/TaxesofCheckout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"

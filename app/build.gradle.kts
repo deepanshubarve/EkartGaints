@@ -49,11 +49,12 @@ dependencies {
     implementation ("com.github.mancj:MaterialSearchBar:0.8.5")
 
     /* dependencies for carausal*/
-    implementation ("com.google.android.material:material:1.10.0")
+    implementation ("com.google.android.material:material:1.11.0")
     // Circle Indicator (To fix the xml preview "Missing classes" error)
     implementation ("me.relex:circleindicator:2.1.6")
     implementation ("org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0")
 
     implementation ("com.android.volley:volley:1.2.1")
     implementation ("com.github.hishd:TinyCart:1.0.1")
+    implementation ("com.github.delight-im:Android-AdvancedWebView:v3.2.1")
 }
