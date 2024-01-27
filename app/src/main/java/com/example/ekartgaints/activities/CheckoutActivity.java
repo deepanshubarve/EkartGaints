@@ -20,6 +20,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.ekartgaints.adapter.CartAdapter;
+import com.example.ekartgaints.databinding.ActivityCheckoutBinding;
 import com.example.ekartgaints.model.Product;
 import com.example.ekartgaints.utils.Constants;
 import com.hishd.tinycart.model.Cart;
